@@ -150,3 +150,15 @@ test_data_ipv6 = [
 @pytest.mark.parametrize("line,expected", test_data_ipv6)
 def test_match_ipv6(line, expected):
     assert match_ipv6(line) == expected
+
+
+def test_integration_ipv4_first(capsys):
+    run(['-f 40', '-i', LOG_LONG])
+    captured = capsys.readouterr()
+    assert captured.out.strip() == 'Aug  9 06:51:17 user avahi-daemon[1023]: Registering new address record for 192.168.1.169 on wlp2s0.IPv4'
+
+
+def test_integration_ipv6_first(capsys):
+    run(['-f 39', '-I', LOG_LONG])
+    captured = capsys.readouterr()
+    assert captured.out.strip() == 'Aug  9 06:51:17 user avahi-daemon[1023]: Registering new address record for 2001:0db8:0000:0000:0000:ff00:0042:8329 on wlp2s0.IPv6'

@@ -30,7 +30,9 @@ Aug  9 06:51:11 user journal[1025]: store: loading devices
 Aug  9 06:51:11 user journal[1025]: [009509c8-d54d                            ] store: loading device
 Aug  9 06:51:11 user journal[1025]: [ce010000-0080                            ] store: loading device
 Aug  9 06:51:11 user journal[1025]: power: state located at: /run/boltd/power
+Aug  9 06:51:17 user avahi-daemon[1023]: Registering new address record for 192.168.1.169 on wlp2s0.IPv4
 Aug  9 06:51:11 user journal[1025]: power: force power support: yes
+Aug  9 06:51:17 user avahi-daemon[1023]: Registering new address record for 2001:0db8:0000:0000:0000:ff00:0042:8329 on wlp2s0.IPv6
 Aug  9 06:51:11 user journal[1025]: udev: found 1 domain
 Aug  9 06:51:11 user journal[1025]: udev: enumerating devices
 Aug  9 06:51:11 user journal[1025]: probing: adding /sys/devices/pci0000:00/0000:00:1d.0/0000:05:00.0 to roots

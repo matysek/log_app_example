@@ -7,9 +7,6 @@ If multiple options are used at once, the result is the intersection of their
 results. The result (matching lines) is printed to standard output.
 """
 
-# TODO add setup.py
-# TODO remove examples?
-
 #Example supported usage:
 # ------------------------
 # ./util.py -h
@@ -66,6 +63,7 @@ def match_ipv6(line):
 
 
 def apply_filters(line, filter_funcs):
+
     for f in filter_funcs:
         if f(line):
             continue
@@ -81,13 +79,13 @@ def run(argv=[], stdin=None):
     parser.add_argument('file', metavar='FILE', nargs='?', default=None, help='log filename')
     parser.add_argument('-f', '--first', metavar='NUM', type=int, help='Print first NUM lines')
     parser.add_argument('-l', '--last', metavar='NUM', type=int, help='Print last NUM lines')
-    parser.add_argument('-t', '--timestamp', action='store_true', help='Print lines that contain a timestamp in HH:MM:SS format')
-    parser.add_argument('-i', '--ipv4', action='store_true', help='Print lines that contain an IPv4 address, matching IPs are highlighted')
-    parser.add_argument('-I', '--ipv6', action='store_true', help='Print lines that contain an IPv6 address (standard notation), matching IPs are highlighted')
+    parser.add_argument('-t', '--timestamps', action='store_true', help='Print lines that contain a timestamp in HH:MM:SS format')
+    parser.add_argument('-i', '--ipv4', action='store_true', help='Print lines that contain an IPv4 address')
+    parser.add_argument('-I', '--ipv6', action='store_true', help='Print lines that contain an IPv6 address (standard notation)')
     args = parser.parse_args(args=argv)
 
     filters = []
-    if args.timestamp:
+    if args.timestamps:
         filters.append(match_timestamp)
     if args.ipv4:
         filters.append(match_ipv4)

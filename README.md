@@ -1,2 +1,1 @@
-# log_app_example
-Simple logging app - just Python exercise
+Simple log parser app - Python exercise
