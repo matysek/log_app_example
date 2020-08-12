@@ -1,0 +1,59 @@
+Aug  9 06:51:10 user systemd[1]: Started NTP client/server.
+Aug  9 06:51:10 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=chronyd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:10 user sssd[1044]: Starting up
+Aug  9 06:51:10 user systemd[1]: Starting Authorization Manager...
+Aug  9 06:51:10 user systemd[1]: Starting Hostname Service...
+Aug  9 06:51:10 user systemd[1]: Started Modem Manager.
+Aug  9 06:51:10 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=ModemManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:10 user sssd[be[implicit_files]][1103]: Starting up
+Aug  9 06:51:10 user rsyslogd[1040]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1040" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Aug  9 06:51:10 user polkitd[1100]: Started polkitd version 0.116
+Aug  9 06:51:10 user systemd[1]: unbound-anchor.service: Succeeded.
+Aug  9 06:51:10 user systemd[1]: Started update of the root trust anchor for DNSSEC validation in unbound.
+Aug  9 06:51:10 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=unbound-anchor comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:10 user audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=unbound-anchor comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:10 user systemd[1]: logrotate.service: Succeeded.
+Aug  9 06:51:10 user systemd[1]: Started Rotate log files.
+Aug  9 06:51:10 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=logrotate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:10 user audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=logrotate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:11 user sssd[nss][1114]: Starting up
+Aug  9 06:51:11 user systemd[1]: Started Virtual Machine and Container Registration Service.
+Aug  9 06:51:11 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-machined comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:11 user systemd[1]: Started Authorization Manager.
+Aug  9 06:51:11 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug  9 06:51:11 user journal[1025]: udev: initializing udev
+Aug  9 06:51:11 user journal[1025]: store: loading domains
+Aug  9 06:51:11 user journal[1025]: [ce010000-0080-domain?                    ] store: loading domain
+Aug  9 06:51:11 user journal[1025]: journal: opened for 'ce010000-0080'; size: 0 bytes
+Aug  9 06:51:11 user journal[1025]: [ce010000-0080-domain?                    ] domain: registered (bootacl: 15/16)
+Aug  9 06:51:11 user journal[1025]: store: loading devices
+Aug  9 06:51:11 user journal[1025]: [009509c8-d54d                            ] store: loading device
+Aug  9 06:51:11 user journal[1025]: [ce010000-0080                            ] store: loading device
+Aug  9 06:51:11 user journal[1025]: power: state located at: /run/boltd/power
+Aug  9 06:51:11 user journal[1025]: power: force power support: yes
+Aug  9 06:51:11 user journal[1025]: udev: found 1 domain
+Aug  9 06:51:11 user journal[1025]: udev: enumerating devices
+Aug  9 06:51:11 user journal[1025]: probing: adding /sys/devices/pci0000:00/0000:00:1d.0/0000:05:00.0 to roots
+Aug  9 06:51:11 user journal[1025]: [ce010000-0080-domain0                    ] bootacl: synchronizing journal
+Aug  9 06:51:11 user systemd[1]: Started Disk Manager.
+ug 12 08:42:03 user systemd[1]: Starting Fingerprint Authentication Daemon...
+Aug 12 08:42:03 user systemd[1]: Started Fingerprint Authentication Daemon.
+Aug 12 08:42:03 user kernel: audit: type=1130 audit(1597214523.351:738): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug 12 08:42:03 user audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug 12 08:42:05 user audit[1992860]: USER_AUTH pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_succeed_if,pam_localuser,pam_unix acct="userick" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user kernel: audit: type=1100 audit(1597214525.918:739): pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_succeed_if,pam_localuser,pam_unix acct="userick" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user audit[1992860]: USER_ACCT pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="userick" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user kernel: audit: type=1101 audit(1597214525.921:740): pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="userick" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user kernel: audit: type=1123 audit(1597214525.923:741): pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/martin/Projects/Study/log_app_example" cmd=636174202F7661722F6C6F672F6D65737361676573 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+Aug 12 08:42:05 user kernel: audit: type=1110 audit(1597214525.924:742): pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user audit[1992860]: USER_CMD pid=1992860 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/martin/Projects/Study/log_app_example" cmd=636174202F7661722F6C6F672F6D65737361676573 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+Aug 12 08:42:05 user audit[1992860]: CRED_REFR pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user audit[1992860]: USER_START pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:05 user kernel: audit: type=1105 audit(1597214525.936:743): pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:06 user audit[1992860]: USER_END pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:06 user audit[1992860]: CRED_DISP pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:06 user kernel: audit: type=1106 audit(1597214526.043:744): pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:06 user kernel: audit: type=1104 audit(1597214526.043:745): pid=1992860 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_localuser,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Aug 12 08:42:34 user systemd[1]: fprintd.service: Succeeded.
+Aug 12 08:42:34 user audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Aug 12 08:42:34 user kernel: audit: type=1131 audit(1597214554.084:746): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
